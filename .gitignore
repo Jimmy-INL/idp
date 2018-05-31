@@ -1,0 +1,11 @@
+# LaTeX files
+*.pdf
+*.aux
+*.log
+*.out
+*.tex
+
+# Other files
+*.docx
+*.odt
+.~lock.*\#
