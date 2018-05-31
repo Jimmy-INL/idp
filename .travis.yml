@@ -5,6 +5,8 @@ language: r
 r: release
 pandoc: false
 disable: homebrew
+before_install:
+  - tlmgr install exam
 install: make
 script: true
 deploy:
