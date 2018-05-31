@@ -9,9 +9,10 @@
 \usepackage{sectsty}            % section font size
 \usepackage[inline]{enumitem}   % customize description list, inline
 \usepackage{amssymb}            % \boxtimes
+\usepackage{cleveref}           % \cref
 
 % Roman numeral sections
-\renewcommand{\thesection}{Part \Roman{section}}
+\renewcommand{\thesection}{\Roman{section}}
 % Section font size
 \sectionfont{\fontsize{12}{15}\selectfont}
 % Macro: Remove paragraph spacing
@@ -36,19 +37,19 @@ annual career progress and mentoring meeting between the mentee and his/her
 faculty mentor(s).
 
 \begin{description}[leftmargin=0pt]
-\item[Student / Postdoc:] complete Parts I to III and attach your updated CV.
-  Provide both documents to your faculty mentor(s) in advance of scheduling your
-  meeting.
-\item[Student / Postdoc and Faculty Mentor(s):] discuss Parts I to III, review
-  goals and objectives and think of action steps towards progress.  Discuss with
-  your mentor(s) and complete Part IV together: outlining action steps and
-  activities you agree to do towards making progress and meeting stated goals
-  and objectives.
+\item[Student / Postdoc:] complete \cref{committee,progress,wellbeing,goals} and
+  attach your updated CV.  Provide both documents to your faculty mentor(s) in
+  advance of scheduling your meeting.
+\item[Student / Postdoc and Faculty Mentor(s):] discuss
+  \cref{committee,progress,wellbeing,goals}, review goals and objectives and
+  think of action steps towards progress.  Discuss with your mentor(s) and
+  complete \cref{next} together: outlining action steps and activities you agree
+  to do towards making progress and meeting stated goals and objectives.
 \end{description}
 
 \noindent\rule{\linewidth}{0.4pt}
 
-\section{Committee formation}
+\section{Committee formation}\label{committee}
 Students should plan to form their committee prior to taking their perspective
 by the summer after the second year at the latest.
 \begin{enumerate}
@@ -59,7 +60,7 @@ by the summer after the second year at the latest.
   \tbox{}
 \end{enumerate}
 
-\section{Overall progress: Review of the last year}
+\section{Overall progress: Review of the last year}\label{progress}
 \begin{enumerate}
 \item Highlight your major accomplishments in the past year (e.g., publications,
   patents, honors or awards, grants or fellowships): \tbox{}
@@ -98,7 +99,7 @@ by the summer after the second year at the latest.
   \end{enumerate}
 \end{enumerate}
 
-\section{Wellbeing}
+\section{Wellbeing}\label{wellbeing}
 \begin{enumerate}
 \item Research environment: What features of the lab group or your relationships
   with colleagues and collaborators are most helpful and supportive to your
@@ -111,7 +112,7 @@ by the summer after the second year at the latest.
   vacations?  \tbox{}
 \end{enumerate}
 
-\section{Goals and Objectives}
+\section{Goals and Objectives}\label{goals}
 \begin{enumerate}
 \item Refer to your previous discussion with your faculty mentor(s).  What
   changes or modifications took place?  \tbox{}
@@ -127,7 +128,7 @@ by the summer after the second year at the latest.
 To be developed jointly by the mentee and the mentor(s) during or after the
 discussion
 
-\section{Action Plan for your Next Steps}
+\section{Action Plan for your Next Steps}\label{next}
 In carrying out activities that may assist you in meeting your
 Research/Scientific objectives listed above-
 \begin{enumerate}
